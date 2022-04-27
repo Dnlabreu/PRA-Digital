@@ -264,6 +264,13 @@ nav img {
 
 /* Carousel - FIM - */
 
+.home-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .UFCD {
   margin-top: 50px;
   margin-bottom: 50px;

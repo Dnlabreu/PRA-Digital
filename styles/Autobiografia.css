@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "montserrat", sans-serif;
+}
+
+/* Menu -Inicio- */
+
+nav {
+  background-color:rgba(37, 37, 37, 0.8);
+  height: 60px;
+  line-height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+}
+
+nav img {
+  width: 200px;
+  float: left;
+  padding-top: 15px;
+}
+
+.menu {
+  float: right;
+}
+
+.menu li {
+  float: left;
+  list-style: none;
+  color: #edf0f1;
+  padding: 0 10px;
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  padding: 5px 10px;
+}
+
+.menu a:hover {
+  color: #0088a9;
+  transition: all 0.5s ease 0s;
+}
+
+/* Submenu nivel 1 */
+
+.submenu {
+  position: absolute;
+  background-color: rgba(37, 37, 37, 0.8);
+  top: 100%;
+  right: -30%;
+  width: 345px;
+  display: none;
+}
+
+/* Submenu nivel 2 */
+
+.submenu2 {
+  position: absolute;
+  right: 100%;
+  width: 100px;
+  top: 0;
+  background-color: rgba(37, 37, 37, 0.8);
+  display: none;
+}
+
+.submenu-tec1 {
+  position: absolute;
+  right: 100%;
+  width: 450px;
+  top: 0;
+  background-color: rgba(37, 37, 37, 0.8);
+  display: none;
+}
+
+.submenu-tec2 {
+  position: absolute;
+  right: 100%;
+  width: 450px;
+  top: 0;
+  background-color: rgba(37, 37, 37, 0.8);
+  display: none;
+}
+
+.submenu-tec3 {
+  position: absolute;
+  right: 100%;
+  width: 450px;
+  top: -500%;
+  background-color: rgba(37, 37, 37, 0.8);
+  display: none;
+}
+
+.submenu3 {
+  position: absolute;
+  right: 100%;
+  width: 160px;
+  top: 0;
+  background-color: rgba(37, 37, 37, 0.8);
+  display: none;
+}
+
+/* Mostrar menu com sursor */
+
+.menu li:hover> .submenu {
+  display: block;
+  animation: slideup .3s ease;
+}
+
+.submenu li:hover .submenu2,
+.submenu li:hover .submenu-tec1,
+.submenu li:hover .submenu-tec2,
+.submenu li:hover .submenu-tec3,
+.submenu2 li:hover .submenu3,
+.submenu-tec1 li:hover .submenu3,
+.submenu-tec2 li:hover .submenu3,
+.submenu-tec3 li:hover .submenu3 {
+  display: block;
+  animation: slideleft .3s ease;
+}
+
+/* Animação dos menus com Keyframes */
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Menu - FIM - */
+
+/* Carousel - Início - */
+
+.carousel-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.carousel-item {
+  position: relative;
+  float: left;
+  display: none;
+  width: 100%;
+  margin-right: -100%;
+}
+
+/* Slide effect */
+
+.carousel-item-active,
+.carousel-item__pos_next {
+  display: block;
+}
+
+.carousel-item__pos_next {
+  left: 100%;
+}
+
+.carousel-item__next {
+  transform: translateX(-100%);
+  transition: transform .5s ease-in-out;
+}
+
+/* fade effect */
+.carousel__fade .carousel-item__pos_next{
+  left: 0;
+  opacity: 0;
+}
+
+.carousel__fade .carousel-item__next{
+  transform: none;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+
+.carousel__fade .carousel-item-active.carousel-item__next{
+  opacity: 0;
+}
+
+/* Carousel */
+
+.carousel-img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.carousel-box h1 {
+  position: absolute;
+  font-family: "montserrat", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #edf0f1;
+  text-shadow: 4px 4px 5px black;
+  border-bottom: 5px solid rgb(68, 145, 45);
+  border-bottom-width: 7px;
+  padding-bottom: 15px;
+}
+
+/* Carousel - FIM - */
+
+.home-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Rodapé  - PRINCIPIO - */
+
+.footer-box {
+  margin-top: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(194, 192, 192);
+  height: 80px;
+}
+
+.footer-name p {
+  font-family: "freehand", "montserat", sans-serif;
+  font-size: 30px;
+  text-decoration: underline 1px;
+}
+
+.footer-social-icon {
+  margin: 10px 10px;
+}
+
+/* Rodapé  - FIM - */

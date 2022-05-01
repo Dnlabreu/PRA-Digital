@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "montserrat", sans-serif;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Menu - INÍCIO - */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.menu-icons {
+  color: #edf0f1;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1500;
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(70, 70, 70);
+}
+
+.logo img {
+  width: 100px;
+  padding: 1.5rem 0 0 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-list li {
+  line-height: 8rem;
+  position: relative;
+}
+
+.sub-menu li {
+  line-height: 6rem;
+}
+
+.nav-list a{
+  display: block;
+  color: #edf0f1;
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  transition: color 650ms;
+}
+
+.nav-list a:hover {
+  color: #0088a9;
+}
+
+.sub-menu {
+  width: 25rem;
+  display: block;
+  position: absolute;
+  border-top: 3px solid #0088a9;
+  background-color: rgb(70, 70, 70);
+  z-index: 100;
+  top: 16rem;
+  right: -16%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 650ms ease;
+}
+
+.sub-menu-clc,
+.sub-menu-clc7,
+.sub-menu-clc6,
+.sub-menu-cp,
+.sub-menu-cp1,
+.sub-menu-stc,
+.sub-menu-stc7,
+.sub-menu-tec1-pt,
+.sub-menu-tec1-asi,
+.sub-menu-tec1-cpwh,
+.sub-menu-tec2-sie,
+.sub-menu-tec2-abd,
+.sub-menu-tec3-aic,
+.sub-menu-tec3-dp,
+.sub-menu-tec3-fc,
+.sub-menu-tec3-cr,
+.sub-menu-tec3-uag,
+.sub-menu-tec3-soic {
+  width: 20rem;
+  display: block;
+  position: absolute;
+  border-top: 3px solid #0088a9;
+  background-color: rgb(70, 70, 70);
+  z-index: 100;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 650ms ease;
+}
+
+.sub-menu-tec1 {
+  width: 43rem;
+  display: block;
+  position: absolute;
+  border-top: 3px solid #0088a9;
+  background-color: rgb(70, 70, 70);
+  z-index: 100;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 650ms ease;
+}
+
+.sub-menu-tec2 {
+  width: 36rem;
+  display: block;
+  position: absolute;
+  border-top: 3px solid #0088a9;
+  background-color: rgb(70, 70, 70);
+  z-index: 100;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 650ms ease;
+}
+
+.sub-menu-tec3 {
+  width: 48rem;
+  display: block;
+  position: absolute;
+  border-top: 3px solid #0088a9;
+  background-color: rgb(70, 70, 70);
+  z-index: 100;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 650ms ease;
+}
+
+/* Apontador do sub-menu nivel 1 */
+
+.sub-menu::before{
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  right: 5rem;
+  border: 1.2rem solid transparent;
+  border-bottom-color: #0088a9;
+}
+
+/* Apontador dos sub-menus nivel 2 */
+
+.sub-menu-clc:before,
+.sub-menu-clc7:before,
+.sub-menu-clc6:before,
+.sub-menu-cp:before,
+.sub-menu-cp1:before,
+.sub-menu-stc:before,
+.sub-menu-stc7:before,
+.sub-menu-tec1:before,
+.sub-menu-tec1-pt:before,
+.sub-menu-tec1-asi:before,
+.sub-menu-tec1-cpwh:before,
+.sub-menu-tec2:before,
+.sub-menu-tec2-sie:before,
+.sub-menu-tec2-abd:before,
+.sub-menu-tec3:before,
+.sub-menu-tec3-aic:before,
+.sub-menu-tec3-dp:before,
+.sub-menu-tec3-fc:before,
+.sub-menu-tec3-cr:before,
+.sub-menu-tec3-uag:before,
+.sub-menu-tec3-soic:before {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  border: 1.2rem solid transparent;
+  border-bottom-color: #0088a9;
+}
+
+.sub-menu .sub-menu-clc::before,
+.sub-menu .sub-menu-clc7::before,
+.sub-menu .sub-menu-clc6::before,
+.sub-menu .sub-menu-cp::before,
+.sub-menu .sub-menu-cp1::before,
+.sub-menu .sub-menu-stc::before,
+.sub-menu .sub-menu-stc7::before,
+.sub-menu .sub-menu-tec1::before,
+.sub-menu .sub-menu-tec1-pt::before,
+.sub-menu .sub-menu-tec1-asi::before,
+.sub-menu .sub-menu-tec1-cpwh::before,
+.sub-menu .sub-menu-tec2::before,
+.sub-menu .sub-menu-tec2-sie::before,
+.sub-menu .sub-menu-tec2-abd::before,
+.sub-menu .sub-menu-tec3::before,
+.sub-menu .sub-menu-tec3-aic::before,
+.sub-menu .sub-menu-tec3-dp::before,
+.sub-menu .sub-menu-tec3-fc::before,
+.sub-menu .sub-menu-tec3-cr::before,
+.sub-menu .sub-menu-tec3-uag::before,
+.sub-menu .sub-menu-tec3-soic::before {
+  top: 1.9rem;
+  right: -2.5rem;
+  border: 1.2rem solid transparent;
+  border-left-color: #0088a9;
+}
+
+/* Posição do efeito deslisante */
+
+.sub-menu .sub-menu-clc,
+.sub-menu-clc .sub-menu-clc7,
+.sub-menu-clc .sub-menu-clc6,
+.sub-menu .sub-menu-cp,
+.sub-menu-cp .sub-menu-cp1,
+.sub-menu .sub-menu-stc,
+.sub-menu-stc .sub-menu-stc7,
+.sub-menu .sub-menu-tec1,
+.sub-menu-tec1 .sub-menu-tec1-pt,
+.sub-menu-tec1 .sub-menu-tec1-asi,
+.sub-menu-tec1 .sub-menu-tec1-cpwh,
+.sub-menu .sub-menu-tec2,
+.sub-menu-tec2 .sub-menu-tec2-sie,
+.sub-menu-tec2 .sub-menu-tec2-abd,
+.sub-menu .sub-menu-tec3,
+.sub-menu-tec3 .sub-menu-tec3-aic,
+.sub-menu-tec3 .sub-menu-tec3-dp,
+.sub-menu-tec3 .sub-menu-tec3-fc,
+.sub-menu-tec3 .sub-menu-tec3-cr,
+.sub-menu-tec3 .sub-menu-tec3-uag,
+.sub-menu-tec3 .sub-menu-tec3-soic {
+  border-top: none;
+  border-right: 3px solid #0088a9;
+  top: 0;
+  right: 160%;
+}
+
+/* Efeito deslisante */
+
+.nav-list li:hover > .sub-menu {
+  top: 8rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu li:hover > .sub-menu-clc{
+  top: -0.3rem;
+  right: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu-clc li:hover > .sub-menu-clc7,
+.sub-menu-clc li:hover > .sub-menu-clc6,
+.sub-menu li:hover > .sub-menu-cp,
+.sub-menu-cp li:hover > .sub-menu-cp1,
+.sub-menu li:hover > .sub-menu-stc,
+.sub-menu-stc li:hover > .sub-menu-stc7,
+.sub-menu li:hover > .sub-menu-tec1,
+.sub-menu-tec1 li:hover > .sub-menu-tec1-pt,
+.sub-menu-tec1 li:hover > .sub-menu-tec1-asi,
+.sub-menu-tec1 li:hover > .sub-menu-tec1-cpwh,
+.sub-menu li:hover > .sub-menu-tec2,
+.sub-menu-tec2 li:hover > .sub-menu-tec2-sie,
+.sub-menu-tec2 li:hover > .sub-menu-tec2-abd,
+.sub-menu li:hover > .sub-menu-tec3,
+.sub-menu-tec3 li:hover > .sub-menu-tec3-aic,
+.sub-menu-tec3 li:hover > .sub-menu-tec3-dp,
+.sub-menu-tec3 li:hover > .sub-menu-tec3-fc,
+.sub-menu-tec3 li:hover > .sub-menu-tec3-cr,
+.sub-menu-tec3 li:hover > .sub-menu-tec3-uag,
+.sub-menu-tec3 li:hover > .sub-menu-tec3-soic {
+  top: 0;
+  right: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu - FIM - */
+
+/* Carousel - Início - */
+
+.carousel-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.carousel-item {
+  position: relative;
+  float: left;
+  display: none;
+  width: 100%;
+  margin-right: -100%;
+}
+
+/* Slide effect */
+
+.carousel-item-active,
+.carousel-item__pos_next {
+  display: block;
+}
+
+.carousel-item__pos_next {
+  left: 100%;
+}
+
+.carousel-item__next {
+  transform: translateX(-100%);
+  transition: transform .5s ease-in-out;
+}
+
+/* fade effect */
+.carousel__fade .carousel-item__pos_next{
+  left: 0;
+  opacity: 0;
+}
+
+.carousel__fade .carousel-item__next{
+  transform: none;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+
+.carousel__fade .carousel-item-active.carousel-item__next{
+  opacity: 0;
+}
+
+/* Carousel */
+
+.carousel-img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.carousel-box h1 {
+  position: absolute;
+  font-family: "montserrat", sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  color: #edf0f1;
+  text-shadow: 4px 4px 5px black;
+  border-bottom: 5px solid rgb(68, 145, 45);
+  border-bottom-width: 7px;
+  padding-bottom: 15px;
+}
+
+/* Carousel - FIM - */
+
+.home-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.formacao-base,
+.formacao-tecnologica {
+  margin-top: 5rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.formacao-base h1,
+.formacao-tecnologica h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.formacao-base p,
+.formacao-tecnologica p {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.ufcd-list li {
+  font-size: 1.4rem;
+}
+
+.total {
+  text-align: right;
+}
+
+button {
+  margin-top: 50px;
+  padding: 10px 50px;
+  border: none;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 25px black;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #0088a9;
+  transition: all 0.5s ease 0s;
+}
+
+/* Rodapé  - PRINCIPIO - */
+
+.footer-box {
+  margin-top: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(194, 192, 192);
+  height: 80px;
+}
+
+.footer-name p {
+  font-family: "freehand", "montserat", sans-serif;
+  font-size: 30px;
+  text-decoration: underline 1px;
+}
+
+.footer-social-icon {
+  margin: 10px 10px;
+}
+
+/* Rodapé  - FIM - */

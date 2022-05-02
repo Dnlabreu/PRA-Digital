@@ -163,6 +163,10 @@
     font-size: 1.6rem;
   }
 
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+
   iframe {
     height: 500px;
   }

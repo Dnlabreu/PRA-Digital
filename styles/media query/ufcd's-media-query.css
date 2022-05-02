@@ -151,16 +151,28 @@
 
   .formacao-base h1,
   .formacao-tecnologica h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
-  .formacao-base p,
-  .formacao-tecnologica p {
-    font-size: 1.2rem;
+  .formacao-base h2,
+  .formacao-tecnologica h2 {
+    font-size: 1.6rem;
   }
 
-  .ufcd-list li {
-    font-size: 1rem;
+  .formacao-base h3,
+  .formacao-tecnologica h3 {
+    font-size: 1.4rem;
+  }
+
+  .formacao-base li,
+  .formacao-tecnologica li {
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+  }
+
+  .ul-box {
+    width: 70%;
+    display: inline-block;
   }
 
   /* Rodapé */

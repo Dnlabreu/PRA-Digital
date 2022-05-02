@@ -416,7 +416,19 @@ nav {
 .formacao-tecnologica h1 {
   font-size: 5rem;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 6rem;
+  box-shadow: 0 0 15px rgb(70, 70, 70);
+  border-radius: 4rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.formacao-base h2,
+.formacao-tecnologica h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px rgb(70, 70, 70);
+  border-radius: 2rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .formacao-base p,
@@ -425,11 +437,22 @@ nav {
   font-size: 1.6rem;
 }
 
-.ufcd-list li {
+.formacao-base li,
+.formacao-tecnologica li {
   font-size: 1.4rem;
+  line-height: 2.5rem;
 }
 
-.total {
+.formacao-tecnologica h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.formacao-base h4,
+.formacao-tecnologica h4 {
+  font-size: 1.2rem;
+  margin-top: 4rem;
   text-align: right;
 }
 

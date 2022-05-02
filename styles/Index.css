@@ -388,7 +388,7 @@ nav {
   text-align: center;
 }
 
-.carousel-box h1 {
+.carousel-titles h1 {
   font-family: "montserrat", sans-serif;
   font-size: 5rem;
   text-align: center;
@@ -399,7 +399,7 @@ nav {
   padding-bottom: 20px;
 }
 
-.carousel-box h2 {
+.carousel-titles h2 {
   font-family: "montserrat", sans-serif;
   font-size: 3rem;
   text-align: center;

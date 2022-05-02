@@ -145,25 +145,16 @@
     display: flex;
   }
 
-  .carousel-box h1 {
-    font-family: "montserrat", sans-serif;
+  .carousel-titles h1 {
     font-size: 3rem;
-    text-align: center;
-    color: #edf0f1;
-    text-shadow: 4px 4px 5px black;
-    border-bottom: 5px solid rgb(68, 145, 45);
-    border-bottom-width: 7px;
-    padding-bottom: 20px;
+    width: 70%;
+    display: inline-block;
   }
 
-  .carousel-box h2 {
-    font-family: "montserrat", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    color: #edf0f1;
-    top: 50%;
-    text-shadow: 4px 4px 5px black;
-    margin-top: 25px;
+  .carousel-titles h2 {
+    font-size: 1.5rem;
+    width: 30%;
+    display: inline-block;
   }
 
   /* Rodapé */

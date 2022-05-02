@@ -12,6 +12,7 @@
 html {
   font-family: "montserrat", sans-serif;
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 a {

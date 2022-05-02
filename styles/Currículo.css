@@ -405,25 +405,14 @@ nav {
   padding-left: 10px;
 }
 
-.pdf-box {
-  width: 100%;
-  height: 1000px;
-  text-align: center;
-}
-
-.pdf {
-  width: 90%;
-  height: 1000px;
-}
-
-/* iframe {
+iframe {
   margin-top: 50px;
   margin-bottom: 50px;
   border-style: none;
   width: 100%;
   height: 1000px;
   box-shadow: 10px 10px 25px black;
-} */
+}
 
 /* Rodapé  - PRINCIPIO - */
 

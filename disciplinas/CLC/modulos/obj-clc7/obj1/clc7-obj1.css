@@ -405,6 +405,7 @@ nav {
   text-align: center;
   color: #edf0f1;
   text-shadow: 4px 4px 5px black;
+  width: 80%;
 }
 
 .carousel-box h3 {
@@ -416,6 +417,7 @@ nav {
   color: #edf0f1;
   text-shadow: 4px 4px 5px black;
   opacity: 50%;
+
 }
 
 /* Carousel - FIM - */

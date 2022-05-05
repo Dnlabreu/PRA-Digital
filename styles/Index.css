@@ -88,7 +88,8 @@ nav {
 }
 
 .nav-list a:hover {
-  color: #0088a9;
+  color: #0088a9; 
+  text-shadow: 0 0 0.5rem #0088a9;
 }
 
 .sub-menu {
@@ -395,7 +396,7 @@ nav {
   text-align: center;
   color: #edf0f1;
   text-shadow: 4px 4px 5px black;
-  border-bottom: 5px solid rgb(68, 145, 45);
+  border-bottom: 5px solid #0088a9;
   border-bottom-width: 7px;
   padding-bottom: 20px;
 }
@@ -556,6 +557,8 @@ nav {
 .EPFF-btn:hover {
   cursor: pointer;
   color: #0088a9;
+  text-shadow: 0 0 0.5rem #0088a9;
+  box-shadow: 10px 10px 55px black;
   transition: all 0.5s ease 0s;
 }
 

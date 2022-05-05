@@ -391,7 +391,7 @@ nav {
   text-align: center;
   color: #edf0f1;
   text-shadow: 4px 4px 5px black;
-  border-bottom: 5px solid rgb(68, 145, 45);
+  border-bottom: 5px solid #0088a9;
   border-bottom-width: 7px;
   padding-bottom: 15px;
 }
@@ -476,6 +476,8 @@ button {
 button:hover {
   cursor: pointer;
   color: #0088a9;
+  text-shadow: 0 0 0.5rem #0088a9;
+  box-shadow: 10px 10px 55px black;
   transition: all 0.5s ease 0s;
 }
 

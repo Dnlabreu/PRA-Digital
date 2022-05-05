@@ -538,36 +538,70 @@ nav {
 }
 
 .btn-box {
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .EPFF-btn {
-  width: 300px;
-  height: 50px;
-  padding: 5px 20px;
-  margin-top: 20px;
+  width: 30rem;
+  height: 6rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  box-shadow: 1rem 1rem 2.5rem rgb(59, 59, 59);
+  outline: none;
   border: none;
-  font-size: 17px;
-  color: white;
-  background-color: rgb(59, 59, 59);
-  border-radius: 5px;
-  box-shadow: 10px 10px 25px black;
+  background:  rgb(59, 59, 59);
+  background: linear-gradient(0deg, rgba(59,59,59,1) 0%, rgba(59,59,59,1) 100%);
 }
 
 .EPFF-btn:hover {
-  cursor: pointer;
+  color: rgb(59, 59, 59);
+  background: transparent;
   color: #0088a9;
   text-shadow: 0 0 0.5rem #0088a9;
-  box-shadow: 10px 10px 55px black;
-  transition: all 0.5s ease 0s;
+  box-shadow:none;
+}
+
+.EPFF-btn:before,
+.EPFF-btn:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0.2rem;
+  width: 0;
+  background: rgb(59, 59, 59);
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+
+.EPFF-btn:after{
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.EPFF-btn:hover:before,
+.EPFF-btn:hover:after{
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 .map {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  height: 500px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  height: 50rem;
   width: 100%;
-  box-shadow: 10px 10px 25px black;
+  box-shadow: 1rem 1rem 2.5rem black;
 }
 
 /* Rodapé  - INÍCIO - */
@@ -584,14 +618,14 @@ nav {
 }
 
 .footer-name p {
-  min-width: 150px;
+  min-width: 1.5rem;
   font-family: "freehand", "montserat", sans-serif;
   font-size: 30px;
   text-decoration: underline 1px;
 }
 
 .footer-social {
-  min-width: 300px;
+  min-width: 30rem;
   display: flex;
   justify-content: space-evenly;
 }

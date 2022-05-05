@@ -463,22 +463,58 @@ nav {
 }
 
 button {
-  margin-top: 50px;
-  padding: 10px 50px;
+  width: 40rem;
+  height: 6rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  box-shadow: 1rem 1rem 2.5rem rgb(59, 59, 59);
+  outline: none;
   border: none;
-  background-color: rgb(59, 59, 59);
-  color: white;
-  font-size: 17px;
-  border-radius: 5px;
-  box-shadow: 10px 10px 25px black;
+  background:  rgb(59, 59, 59);
+  background: linear-gradient(0deg, rgba(59,59,59,1) 0%, rgba(59,59,59,1) 100%);
 }
 
 button:hover {
-  cursor: pointer;
+  color: rgb(59, 59, 59);
+  background: transparent;
   color: #0088a9;
   text-shadow: 0 0 0.5rem #0088a9;
-  box-shadow: 10px 10px 55px black;
-  transition: all 0.5s ease 0s;
+  box-shadow:none;
+}
+
+button:before,
+button:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0.2rem;
+  width: 0;
+  background: rgb(59, 59, 59);
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+
+button:after{
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after{
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 /* Rodapé  - PRINCIPIO - */

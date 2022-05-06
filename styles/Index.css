@@ -56,6 +56,13 @@ nav {
   width: 100%;
   height: 8rem;
   background-color: rgb(70, 70, 70);
+  z-index: 1;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  transition: top 0.3s ease;
 }
 
 .logo img {
@@ -88,7 +95,7 @@ nav {
 }
 
 .nav-list a:hover {
-  color: #0088a9; 
+  color: #0088a9;
   text-shadow: 0 0 0.5rem #0088a9;
 }
 
@@ -380,7 +387,7 @@ nav {
 .carousel-img {
   display: block;
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: 100vh;
   object-fit: cover;
   filter: blur(3px);
 }
@@ -534,7 +541,7 @@ nav {
 .EPFF-img {
   width: 300px;
   margin-top: 30px;
-  box-shadow: 10px 10px 25px black;
+  box-shadow: 10px 10px 25px rgb(70, 70, 70);
 }
 
 .btn-box {
@@ -552,15 +559,15 @@ nav {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   position: relative;
-  box-shadow: 1rem 1rem 2.5rem rgb(59, 59, 59);
+  box-shadow: 1rem 1rem 2.5rem rgb(70, 70, 70);
   outline: none;
   border: none;
-  background:  rgb(59, 59, 59);
-  background: linear-gradient(0deg, rgba(59,59,59,1) 0%, rgba(59,59,59,1) 100%);
+  background:  rgb(70, 70, 70);
+  background: linear-gradient(0deg, rgba(70,70,70,1) 0%, rgba(70,70,70,1) 100%);
 }
 
 .EPFF-btn:hover {
-  color: rgb(59, 59, 59);
+  color: rgb(70, 70, 70);
   background: transparent;
   color: #0088a9;
   text-shadow: 0 0 0.5rem #0088a9;
@@ -575,11 +582,11 @@ nav {
   right: 0;
   height: 0.2rem;
   width: 0;
-  background: rgb(59, 59, 59);
+  background: rgb(70, 70, 70);
   box-shadow:
    -1px -1px 5px 0px #fff,
-   7px 7px 20px 0px #0003,
-   4px 4px 5px 0px #0002;
+   7px 7px 20px 0px rgb(70, 70, 70),
+   4px 4px 5px 0px rgb(70, 70, 70);
   transition:400ms ease all;
 }
 
@@ -601,33 +608,44 @@ nav {
   margin-bottom: 4rem;
   height: 50rem;
   width: 100%;
-  box-shadow: 1rem 1rem 2.5rem black;
+  box-shadow: 1rem 1rem 2.5rem rgb(70, 70, 70);
 }
 
 /* Rodapé  - INÍCIO - */
 
+.footer-outer-box {
+  background: rgb(70, 70, 70);
+}
+
+.footer-copyright {
+  font-family:"montserat", sans-serif;
+  font-size: 1.2rem;
+  padding-left: 1%;
+  padding-top: 1%;
+  color: #edf0f1;
+}
+
 .footer-box {
+  height: 10rem;
   padding-left: 10%;
   padding-right: 10%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid rgb(194, 192, 192);
-  height: 80px;
 }
 
-.footer-name p {
-  min-width: 1.5rem;
+.footer-name {
   font-family: "freehand", "montserat", sans-serif;
-  font-size: 30px;
+  font-size: 2.5rem;
   text-decoration: underline 1px;
+  color: #edf0f1;
 }
 
 .footer-social {
   min-width: 30rem;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 /* Rodapé  - FIM - */

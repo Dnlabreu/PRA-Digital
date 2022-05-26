@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *,
 *::before,
@@ -481,9 +482,8 @@ iframe {
 }
 
 .footer-name {
-  font-family: "freehand", "montserat", sans-serif;
+  font-family: "Pacifico", cursive;
   font-size: 2.5rem;
-  text-decoration: underline 1px;
   color: #edf0f1;
 }
 

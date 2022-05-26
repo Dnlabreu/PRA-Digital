@@ -458,6 +458,11 @@ iframe {
   box-shadow: 10px 10px 25px black;
 }
 
+.grid-container p {
+  font-size: 1.6rem;
+  color: transparent;
+}
+
 /* Rodapé  - INÍCIO - */
 
 .footer-outer-box {

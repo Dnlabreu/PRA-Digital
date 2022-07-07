@@ -66,7 +66,6 @@ nav {
   transition: top 0.3s ease;
 }
 
-
 .logo img {
   width: 100px;
   padding: 1.5rem 0 0 0;
@@ -98,6 +97,7 @@ nav {
 
 .nav-list a:hover {
   color: #0088a9;
+  text-shadow: 0 0 0.5rem #0088a9;
 }
 
 .sub-menu {
@@ -238,7 +238,7 @@ nav {
 .sub-menu .sub-menu-tec2::before,
 .sub-menu .sub-menu-tec2-sie::before,
 .sub-menu .sub-menu-tec2-abd::before,
-.sub-menu .sub-menu-tec3::before,
+/* .sub-menu .sub-menu-tec3::before, */
 .sub-menu .sub-menu-tec3-aic::before,
 .sub-menu .sub-menu-tec3-dp::before,
 .sub-menu .sub-menu-tec3-fc::before,
@@ -250,6 +250,14 @@ nav {
   border: 1.2rem solid transparent;
   border-left-color: #0088a9;
 }
+
+.sub-menu .sub-menu-tec3::before {
+  top: 32rem;
+  right: -2.5rem;
+  border: 1.2rem solid transparent;
+  border-left-color: #0088a9;
+}
+
 
 /* Posição do efeito deslisante */
 
@@ -267,7 +275,7 @@ nav {
 .sub-menu .sub-menu-tec2,
 .sub-menu-tec2 .sub-menu-tec2-sie,
 .sub-menu-tec2 .sub-menu-tec2-abd,
-.sub-menu .sub-menu-tec3,
+/* .sub-menu .sub-menu-tec3, */
 .sub-menu-tec3 .sub-menu-tec3-aic,
 .sub-menu-tec3 .sub-menu-tec3-dp,
 .sub-menu-tec3 .sub-menu-tec3-fc,
@@ -277,6 +285,13 @@ nav {
   border-top: none;
   border-right: 3px solid #0088a9;
   top: 0;
+  right: 160%;
+}
+
+.sub-menu .sub-menu-tec3 {
+  border-top: none;
+  border-right: 3px solid #0088a9;
+  top: -505%;
   right: 160%;
 }
 
@@ -308,7 +323,7 @@ nav {
 .sub-menu li:hover > .sub-menu-tec2,
 .sub-menu-tec2 li:hover > .sub-menu-tec2-sie,
 .sub-menu-tec2 li:hover > .sub-menu-tec2-abd,
-.sub-menu li:hover > .sub-menu-tec3,
+/* .sub-menu li:hover > .sub-menu-tec3, */
 .sub-menu-tec3 li:hover > .sub-menu-tec3-aic,
 .sub-menu-tec3 li:hover > .sub-menu-tec3-dp,
 .sub-menu-tec3 li:hover > .sub-menu-tec3-fc,
@@ -316,6 +331,13 @@ nav {
 .sub-menu-tec3 li:hover > .sub-menu-tec3-uag,
 .sub-menu-tec3 li:hover > .sub-menu-tec3-soic {
   top: 0;
+  right: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu li:hover > .sub-menu-tec3 {
+  top: -505%;
   right: 100%;
   opacity: 1;
   visibility: visible;

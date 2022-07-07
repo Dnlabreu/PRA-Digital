@@ -66,6 +66,7 @@ nav {
   transition: top 0.3s ease;
 }
 
+
 .logo img {
   width: 100px;
   padding: 1.5rem 0 0 0;
@@ -97,7 +98,6 @@ nav {
 
 .nav-list a:hover {
   color: #0088a9;
-  text-shadow: 0 0 0.5rem #0088a9;
 }
 
 .sub-menu {
@@ -238,7 +238,7 @@ nav {
 .sub-menu .sub-menu-tec2::before,
 .sub-menu .sub-menu-tec2-sie::before,
 .sub-menu .sub-menu-tec2-abd::before,
-/* .sub-menu .sub-menu-tec3::before, */
+.sub-menu .sub-menu-tec3::before,
 .sub-menu .sub-menu-tec3-aic::before,
 .sub-menu .sub-menu-tec3-dp::before,
 .sub-menu .sub-menu-tec3-fc::before,
@@ -250,14 +250,6 @@ nav {
   border: 1.2rem solid transparent;
   border-left-color: #0088a9;
 }
-
-.sub-menu .sub-menu-tec3::before {
-  top: 32rem;
-  right: -2.5rem;
-  border: 1.2rem solid transparent;
-  border-left-color: #0088a9;
-}
-
 
 /* Posição do efeito deslisante */
 
@@ -275,7 +267,7 @@ nav {
 .sub-menu .sub-menu-tec2,
 .sub-menu-tec2 .sub-menu-tec2-sie,
 .sub-menu-tec2 .sub-menu-tec2-abd,
-/* .sub-menu .sub-menu-tec3, */
+.sub-menu .sub-menu-tec3,
 .sub-menu-tec3 .sub-menu-tec3-aic,
 .sub-menu-tec3 .sub-menu-tec3-dp,
 .sub-menu-tec3 .sub-menu-tec3-fc,
@@ -285,13 +277,6 @@ nav {
   border-top: none;
   border-right: 3px solid #0088a9;
   top: 0;
-  right: 160%;
-}
-
-.sub-menu .sub-menu-tec3 {
-  border-top: none;
-  border-right: 3px solid #0088a9;
-  top: -505%;
   right: 160%;
 }
 
@@ -323,7 +308,7 @@ nav {
 .sub-menu li:hover > .sub-menu-tec2,
 .sub-menu-tec2 li:hover > .sub-menu-tec2-sie,
 .sub-menu-tec2 li:hover > .sub-menu-tec2-abd,
-/* .sub-menu li:hover > .sub-menu-tec3, */
+.sub-menu li:hover > .sub-menu-tec3,
 .sub-menu-tec3 li:hover > .sub-menu-tec3-aic,
 .sub-menu-tec3 li:hover > .sub-menu-tec3-dp,
 .sub-menu-tec3 li:hover > .sub-menu-tec3-fc,
@@ -331,13 +316,6 @@ nav {
 .sub-menu-tec3 li:hover > .sub-menu-tec3-uag,
 .sub-menu-tec3 li:hover > .sub-menu-tec3-soic {
   top: 0;
-  right: 100%;
-  opacity: 1;
-  visibility: visible;
-}
-
-.sub-menu li:hover > .sub-menu-tec3 {
-  top: -505%;
   right: 100%;
   opacity: 1;
   visibility: visible;
@@ -427,37 +405,7 @@ nav {
   padding-bottom: 15px;
 }
 
-.carousel-box h2 {
-  position: absolute;
-  bottom: 25%;
-  width: 90%;
-  font-family: "montserrat", sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  color: #edf0f1;
-  text-shadow: 4px 4px 5px black;
-}
-
-.carousel-box h3 {
-  position: absolute;
-  bottom: 5%;
-  font-family: "montserrat", sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  color: #edf0f1;
-  text-shadow: 4px 4px 5px black;
-  opacity: 50%;
-}
-
 /* Carousel - FIM - */
-
-.background-image {
-  margin-top: 0px;
-  width: 100%;
-  height: 500px;
-  object-fit:cover;
-  filter: blur(3px);
-}
 
 .home-wrapper {
   margin-right: auto;
@@ -467,23 +415,121 @@ nav {
   padding-left: 10px;
 }
 
-.grid-container{
-  margin: 50px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px 50px;
+.formacao-base,
+.formacao-tecnologica {
+  margin-top: 5rem;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-iframe {
-  width: 100%;
-  height: 800px;
-  border: none;
-  box-shadow: 10px 10px 25px black;
+.formacao-base h1,
+.formacao-tecnologica h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
+  box-shadow: 0 0 15px rgb(70, 70, 70);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
 }
 
-.grid-container p {
+.formacao-base h2,
+.formacao-tecnologica h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px rgb(70, 70, 70);
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.formador {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.formacao-base p,
+.formacao-tecnologica p {
+  margin-bottom: 20px;
   font-size: 1.6rem;
-  color: transparent;
+}
+
+.formacao-base li,
+.formacao-tecnologica li {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+.formacao-tecnologica h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.table-fb {
+  margin: 0 auto;
+  font-size: 1.4rem;
+
+}
+
+.formacao-base h4,
+.formacao-tecnologica h4 {
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  text-align: right;
+}
+
+button {
+  width: 40rem;
+  height: 6rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  box-shadow: 1rem 1rem 2.5rem rgb(70, 70, 70);
+  outline: none;
+  border: none;
+  background:  rgb(70, 70, 70);
+  background: linear-gradient(0deg, rgba(70,70,70,1) 0%, rgba(70,70,70,1) 100%);
+}
+
+button:hover {
+  color: rgb(70, 70, 70);
+  background: transparent;
+  color: #0088a9;
+  text-shadow: 0 0 0.5rem #0088a9;
+  box-shadow:none;
+}
+
+button:before,
+button:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0.2rem;
+  width: 0;
+  background: rgb(70, 70, 70);
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px rgb(70, 70, 70),
+   4px 4px 5px 0px rgb(70, 70, 70);
+  transition:400ms ease all;
+}
+
+button:after{
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after{
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 /* Rodapé  - INÍCIO - */

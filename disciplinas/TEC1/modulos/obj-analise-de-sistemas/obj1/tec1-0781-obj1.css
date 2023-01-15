@@ -117,6 +117,7 @@ nav {
 .sub-menu-clc,
 .sub-menu-clc7,
 .sub-menu-clc6,
+.sub-menu-clc5,
 .sub-menu-cp,
 .sub-menu-cp1,
 .sub-menu-stc,
@@ -199,6 +200,7 @@ nav {
 .sub-menu-clc:before,
 .sub-menu-clc7:before,
 .sub-menu-clc6:before,
+.sub-menu-clc5:before,
 .sub-menu-cp:before,
 .sub-menu-cp1:before,
 .sub-menu-stc:before,
@@ -227,6 +229,7 @@ nav {
 .sub-menu .sub-menu-clc::before,
 .sub-menu .sub-menu-clc7::before,
 .sub-menu .sub-menu-clc6::before,
+.sub-menu .sub-menu-clc5::before,
 .sub-menu .sub-menu-cp::before,
 .sub-menu .sub-menu-cp1::before,
 .sub-menu .sub-menu-stc::before,
@@ -264,6 +267,7 @@ nav {
 .sub-menu .sub-menu-clc,
 .sub-menu-clc .sub-menu-clc7,
 .sub-menu-clc .sub-menu-clc6,
+.sub-menu-clc .sub-menu-clc5,
 .sub-menu .sub-menu-cp,
 .sub-menu-cp .sub-menu-cp1,
 .sub-menu .sub-menu-stc,
@@ -312,6 +316,7 @@ nav {
 
 .sub-menu-clc li:hover > .sub-menu-clc7,
 .sub-menu-clc li:hover > .sub-menu-clc6,
+.sub-menu-clc li:hover > .sub-menu-clc5,
 .sub-menu li:hover > .sub-menu-cp,
 .sub-menu-cp li:hover > .sub-menu-cp1,
 .sub-menu li:hover > .sub-menu-stc,
@@ -482,8 +487,10 @@ iframe {
 }
 
 .grid-container p {
-  font-size: 1.6rem;
-  color: transparent;
+  color: rgb(121, 120, 120);
+  font-size: 10rem;
+  margin: 10rem auto;
+  text-align: center;
 }
 
 /* Rodapé  - INÍCIO - */
